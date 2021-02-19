@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level1_1</title>
+    <script>
+        // 写一个函数输出数组中重复的元素，例为：['A','B','C','D','E','E','F','G','H','J','K','K','M']。
+        var arr = ['A','B','C','D','E','E','F','G','H','J','K','K','M']
+        function recur(arr) {
+            var arr1 = [];
+            var arr2 = [];
+            for (var i = 0; i <= arr.length; i++) {
+                if (arr1.indexOf(arr[i]) == -1) {
+                    arr1.push(arr[i])
+                } else {
+                    (arr2.indexOf(arr[i]) == -1) && arr2.push(arr[i])
+                }
+            }
+            console.log(arr2);
+        }
+        recur(arr) 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

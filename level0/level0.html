@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level0</title>
+    <script>
+        // 将字符串里每个单词的首字母变为大写，例为：'today is a happy day'。
+        var str = 'today is a happy day'
+        function change() {
+            var arr = str.split(' ');
+            var arrNew = [];
+            for (var i = 0; i < arr.length; i++) {
+                arrNew.push(arr[i].substring(0, 1).toUpperCase() + arr[i].substring(1));
+
+            }
+            str = arrNew.join(' ');
+            console.log(str);
+        }
+
+        change(str)
+        //'Today Is A Happy Day'
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
